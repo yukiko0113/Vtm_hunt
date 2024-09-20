@@ -1,0 +1,111 @@
+<form action="">
+  <style>
+    .debug {
+      border: 1px solid red;
+    }
+
+    .scrollbar {
+      width: 300px;
+      height: 100px;
+      overflow-y: scroll;
+      scrollbar-color: black gray;
+      scrollbar-width: thin;
+    }
+
+    #video-wrapper {
+      float: inline-start;
+    }
+
+    #video-player {
+      width: 100%;
+      min-width: 1000px;
+    }
+
+    #contenu {
+      position: absolute;
+      width: 17%;
+      margin-left: 42.5%;
+      margin-top: 17%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    #nom {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: 700;
+      background-image: url("img/bouton.webp");
+      background-position-y: center;
+      background-size: 100%;
+    }
+
+    #ambient {
+      display: flex;
+      justify-content: center;
+      font-style: italic;
+    }
+
+    #apparence {
+      display: flex;
+      justify-content: center;
+      font-weight: 500;
+    }
+
+    #description {
+      display: flex;
+      justify-content: center;
+      padding-inline: 10px;
+      margin-top: -20px;
+    }
+
+    #button-container {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url("img/bouton.webp");
+      background-repeat: no-repeat;
+      background-position-x: center;
+      background-position-y: center;
+      background-size: 70%;
+      height: 55px;
+      font-size: 1.5em;
+      font-weight: 500;
+    }
+
+    #button-container:hover {
+      color: rgb(202, 0, 0);
+    }
+  </style>
+
+  <div id="video-wrapper">
+    <video aria-hidden="true" id="video-player">
+      <source src="img/Victim_clean.webm" type="video/webm" />
+    </video>
+  </div>
+
+  <div id="contenu">
+    <div id="nom">
+      <h1>MI-KYONG</h1>
+    </div>
+    <div id="ambient">
+      <p>"Tester c'est douter"</p>
+    </div>
+    <h2 id="apparence">APPARENCE</h2>
+    <div id="description">
+      <p class="scrollbar">
+        Description de la victime avec un très long Ut ut no eos vero invidunt
+        aliquyam stet ut sea stet nulla et. Sed amet vulputate nonumy minim
+        consectetuer sit et stet vel sadipscing. Nulla consetetur sanctus amet
+        eum consetetur. Justo ipsum iriure rebum at kasd esse et erat lorem
+        magna sea dolores diam erat sit duo. Magna sadipscing illum soluta
+        ullamcorper diam id magna at hendrerit. Sanctus amet eu erat iusto lorem
+        eos consectetuer dolore nulla sit eos et consequat. Ipsum accumsan elitr
+        vero.
+      </p>
+    </div>
+    <div id="button-container" onclick="alert()">DRINK</div>
+  </div>
+</form>
