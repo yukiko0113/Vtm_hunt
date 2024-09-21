@@ -5,12 +5,13 @@
     }
 
     #video-wrapper {
-      float: inline-start;
+      position: absolute;
+      z-index: 10;
+      margin-left: -300px;
     }
 
     #video-player {
-      width: 100%;
-      min-width: 1000px;
+      width: 1200px;
     }
 
     .scrollbar {
@@ -22,10 +23,11 @@
     }
 
     #contenu {
+      z-index: 20;
       position: absolute;
-      width: 320px;
-      margin-left: 800px;
-      margin-top: 320px;
+      width: 240px;
+      margin-left: 200px;
+      margin-top: 200px;
       display: flex;
       flex-direction: column;
       justify-content: center;
