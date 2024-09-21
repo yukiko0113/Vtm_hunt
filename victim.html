@@ -4,14 +4,6 @@
       border: 1px solid red;
     }
 
-    .scrollbar {
-      width: 300px;
-      height: 100px;
-      overflow-y: scroll;
-      scrollbar-color: black gray;
-      scrollbar-width: thin;
-    }
-
     #video-wrapper {
       float: inline-start;
     }
@@ -21,11 +13,19 @@
       min-width: 1000px;
     }
 
+    .scrollbar {
+      width: 300px;
+      height: 100px;
+      overflow-y: scroll;
+      scrollbar-color: black gray;
+      scrollbar-width: thin;
+    }
+
     #contenu {
       position: absolute;
-      width: 17%;
-      margin-left: 42.5%;
-      margin-top: 17%;
+      width: 320px;
+      margin-left: 800px;
+      margin-top: 320px;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -36,7 +36,7 @@
       justify-content: center;
       align-items: center;
       font-weight: 700;
-      background-image: url("img/bouton.webp");
+      background-image: url("https://github.com/yukiko0113/Vtm_hunt/raw/refs/heads/main/img/bouton.webp");
       background-position-y: center;
       background-size: 100%;
     }
@@ -65,7 +65,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      background-image: url("img/bouton.webp");
+      background-image: url("https://github.com/yukiko0113/Vtm_hunt/raw/refs/heads/main/img/bouton.webp");
       background-repeat: no-repeat;
       background-position-x: center;
       background-position-y: center;
@@ -82,7 +82,10 @@
 
   <div id="video-wrapper">
     <video aria-hidden="true" id="video-player">
-      <source src="img/Victim_clean.webm" type="video/webm" />
+      <source
+        src="https://github.com/yukiko0113/Vtm_hunt/raw/refs/heads/main/img/Victim_clean.webm"
+        type="video/webm"
+      />
     </video>
   </div>
 
