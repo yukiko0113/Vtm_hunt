@@ -34,14 +34,16 @@
         font-size: 0.9em;
       }
   
-      #nom {
+      #Blood {
         display: flex;
         justify-content: center;
         align-items: center;
         font-weight: 700;
-        background-image: url("https://github.com/yukiko0113/Vtm_hunt/raw/refs/heads/main/img/bouton.webp");
+        color: rgb(202, 0, 0);
+        background-image: url("https://github.com/yukiko0113/Vtm_hunt/raw/refs/heads/main/img/Ligne_et_cercle_blood.png");
         background-position-y: center;
         background-size: 100%;
+        background-repeat: no-repeat;
       }
   
       #ambient {
@@ -81,25 +83,32 @@
       #button-container:hover {
         color: rgb(202, 0, 0);
       }
+      
+      #serapation {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+        
     </style>
   
     <div id="video-wrapper">
       <video aria-hidden="true" id="video-player" autoplay loop muted>
         <source
-          src="https://github.com/yukiko0113/Vtm_hunt/raw/refs/heads/main/img/Victim_clean.webm"
+          src="https://github.com/yukiko0113/Vtm_hunt/raw/refs/heads/main/img/Blood_clean.webm"
           type="video/webm"
         />
       </video>
     </div>
   
     <div id="contenu">
-      <div id="nom">
-        <h1>MI-KYONG</h1>
+      <div id="Blood">
+        <h1>0</h1>
       </div>
       <div id="ambient">
         <p>"Tester c'est douter"</p>
-      </div id="apparence">
-      <h2>APPARENCE</h2>
+        <img id="serapation" src="https://github.com/yukiko0113/Vtm_hunt/raw/refs/heads/main/img/Ligne_3_1.png"/>
       <div id="description">
         <p class="scrollbar">
           Description de la victime avec un très long Ut ut no eos vero invidunt
