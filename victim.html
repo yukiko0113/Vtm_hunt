@@ -101,16 +101,7 @@
       </div id="apparence">
       <h2>APPARENCE</h2>
       <div id="description">
-        <p class="scrollbar">
-          Description de la victime avec un très long Ut ut no eos vero invidunt
-          aliquyam stet ut sea stet nulla et. Sed amet vulputate nonumy minim
-          consectetuer sit et stet vel sadipscing. Nulla consetetur sanctus amet
-          eum consetetur. Justo ipsum iriure rebum at kasd esse et erat lorem
-          magna sea dolores diam erat sit duo. Magna sadipscing illum soluta
-          ullamcorper diam id magna at hendrerit. Sanctus amet eu erat iusto lorem
-          eos consectetuer dolore nulla sit eos et consequat. Ipsum accumsan elitr
-          vero.
-        </p>
+        <i>Durant votre chasse vous rencontrez ^^#nom^^ , iel sera votre Calice de ce soir. Vos crocs planter, son sang à  ^^#Calice^^ </i>
       </div>
       <script>
         function setPhase(phase) {
@@ -119,14 +110,14 @@
           $('#hunt_form').submit();
         }
  <script>
-    function setPhase() {
-$('#dialog-redirect').val('_drink');
-      $('#hunt_form').submit();
-$self.close()
-    }
+  function setPhase() {
+    $('#dialog-redirect').val('_drink');
+    $('#hunt_form').submit();
+    $self.close()
+  }
   </script>
   <input type="hidden" id="dialog-redirect" name="goto" />
-  <button style="border: none;
+  <button class="header-button control close" style="border: none;
         outline: none;
         background-color: transparent;
         box-shadow:none;" 
