@@ -15,7 +15,7 @@
     }
 
     .scrollbar {
-      width: 300px;
+      width: 230px;
       height: 100px;
       overflow-y: scroll;
       scrollbar-color: black gray;
@@ -50,7 +50,10 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      justify-content: center;
       font-style: italic;
+      font-size: 0.8em;
+      width: 220px;
     }
 
     #apparence {
@@ -67,18 +70,14 @@
     }
 
     #button-container {
-      margin-top: 20px;
       display: flex;
       justify-content: center;
       align-items: center;
-      background-image: url("https://github.com/yukiko0113/Vtm_hunt/raw/refs/heads/main/img/bouton.webp");
-      background-repeat: no-repeat;
       background-position-x: center;
       background-position-y: center;
       background-size: 70%;
-      height: 55px;
       font-weight: 500;
-      font-size: 1.3em;
+      font-size: 1.0em;
       border: none;
       outline: none;
       background-color: transparent;
@@ -89,7 +88,14 @@
       color: rgb(202, 0, 0);
     }
 
-    #serapation {
+    #separation {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+     #separation-x {
+      transform: scaleY(-1);
       margin-top: 20px;
       display: flex;
       justify-content: center;
@@ -125,27 +131,34 @@
       <h1>0</h1>
     </div>
     <div id="ambient">
-      <p>"Tester c'est douter"</p>
+      <p>Goût du sang et de la disgracie Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
       <img
-        id="serapation"
+        id="separation"
         src="https://github.com/yukiko0113/Vtm_hunt/raw/refs/heads/main/img/Ligne_3_1.png"
       />
     </div>
-    <div id="description">
-      <p class="scrollbar">
-        Description de la victime avec un très long Ut ut no eos vero invidunt
-        aliquyam stet ut sea stet nulla et. Sed amet vulputate nonumy minim
-        consectetuer sit et stet vel sadipscing. Nulla consetetur sanctus amet
-        eum consetetur. Justo ipsum iriure rebum at kasd esse et erat lorem
-        magna sea dolores diam erat sit duo. Magna sadipscing illum soluta
-        ullamcorper diam id magna at hendrerit. Sanctus amet eu erat iusto lorem
-        eos consectetuer dolore nulla sit eos et consequat. Ipsum accumsan elitr
-        vero.
-      </p>
-    </div>
-    <input type="hidden" id="dialog-redirect" name="goto" />
-    <button id="button-container" type="button" onclick="setPhase()">
-      DRINK
+    <div>
+      <p> Description de l'effet mécanique Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p></div> 
+   <img
+        id="separation-x"
+        src="https://github.com/yukiko0113/Vtm_hunt/raw/refs/heads/main/img/Ligne_2.png"
+        />
+<input type="hidden" id="dialog-redirect" name="goto" />
+    <button class="header-button control close" id="button-container" type="button" onclick="setPhase()">
+      [Kill it]
     </button>
+    <button class="header-button control close" id="button-container" type="button" onclick="setPhase()">
+      [Kill it]
+    </button>
+        <button class="header-button control close" id="button-container" type="button" onclick="setPhase()">
+      [Kill it]
+    </button>
+        <button class="header-button control close" id="button-container" type="button" onclick="setPhase()">
+      [Kill it]
+    </button>
+   <img
+        id="separation"
+        src="https://github.com/yukiko0113/Vtm_hunt/raw/refs/heads/main/img/Ligne_2.png"
+        />
   </div>
 </form>
