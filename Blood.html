@@ -97,26 +97,19 @@
      #separation-x {
       transform: scaleY(-1);
       margin-top: 20px;
+      border: none;
       display: flex;
       justify-content: center;
       align-items: center;
     }
   </style>
 
-  <script>
-    function setPhase(phase) {
-      document.getElementById("button-container").value = phase;
-      $("#dialog-redirect").val("_drink");
-      $("#Blood_form").submit();
-    }
-
+ <script>
     function setPhase() {
-      $("#dialog-redirect").val("_drink");
-      $("#hunt_form").submit();
-      $self.close();
+$('#dialog-redirect').val('_dead');
+      $('#Blood_form').submit();
     }
   </script>
-
   <div id="video-wrapper">
     <video aria-hidden="true" id="video-player" autoplay loop muted>
       <source
