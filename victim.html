@@ -78,6 +78,13 @@
       font-size: 1.3em;
     }
 
+    #button-container {
+      border: none;
+      outline: none;
+      background-color: transparent;
+      box-shadow: none;
+    }
+
     #button-container:hover {
       color: rgb(202, 0, 0);
     }
@@ -116,20 +123,15 @@
     </div>
     <div id="description">
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat.
+        <i
+          >Durant votre chasse vous rencontrez ^^#nom^^ , iel sera votre Calice
+          de ce soir. Vos crocs planter, son sang à ^^#Calice^^
+        </i>
       </p>
     </div>
     <input type="hidden" id="dialog-redirect" name="goto" />
     <button
-      style="
-        border: none;
-        outline: none;
-        background-color: transparent;
-        box-shadow: none;
-      "
+      class="header-button control close"
       id="button-container"
       type="button"
       onclick="setPhase()"
