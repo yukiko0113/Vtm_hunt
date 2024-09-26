@@ -100,6 +100,9 @@
       $("#dialog-redirect").val("_drink");
       $("#hunt_form").submit();
     }
+    function generateName(listName) {
+      return listName[Math.floor(Math.random() * listName.length)];
+    }
   </script>
 
   <div id="video-wrapper">
@@ -124,7 +127,7 @@
     <div id="description">
       <p>
         <i
-          >Durant votre chasse vous rencontrez ^^#nom^^ , iel sera votre Calice
+          >Durant votre chasse vous rencontrez <script>document.write(generateName(["Name1", "Name2", "Name3"]))</script> , iel sera votre Calice
           de ce soir. Vos crocs planter, son sang à ^^#Calice^^
         </i>
       </p>
