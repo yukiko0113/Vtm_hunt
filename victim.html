@@ -122,8 +122,9 @@
     <div id="description">
       <p>
         <i
-          >Durant votre chasse vous rencontrez <script>document.write(generateName(["Name1", "Name2", "Name3"]))</script> , iel sera votre Calice
-          de ce soir. Vos crocs planter, son sang à ^^#Calice^^
+          >Durant votre chasse vous rencontrez <span id="nomRandom"></span>, iel
+          sera votre Calice de ce soir. Vos crocs planter, son sang à
+          ^^#Calice^^
         </i>
       </p>
     </div>
@@ -137,4 +138,20 @@
       DRINK
     </button>
   </div>
+  <script>
+    function setPhase(phase) {
+      document.getElementById("button-container").value = phase;
+      $("#dialog-redirect").val("_drink");
+      $("#hunt_form").submit();
+    }
+    function setPhase() {
+      $("#dialog-redirect").val("_drink");
+      $("#hunt_form").submit();
+    }
+    function generateName(listName) {
+      document.getElementById("nomRandom").textContent =
+        listName[Math.floor(Math.random() * listName.length)];
+    }
+    generateName(["Name1", "Name2", "Name3"]);
+  </script>
 </form>
