@@ -3,8 +3,7 @@
     <meta charset="utf-8">
     <title>Ma page</title>
     <link href="style_victim.css" rel="stylesheet">
-</head>
-    
+</head>  
     <div id="video-wrapper">
       <video aria-hidden="true" id="video-player" autoplay loop muted>
         <source
@@ -14,24 +13,20 @@
       </video>
     </div>
   
-    <div id="contenu">
+    <div id="contenu" ">
       <div id="nom">
-        <h1>MI-KYONG</h1>
+        <h1 style="border-bottom: none;"><?php echo generateRandomName(array("Ji-eun", "Seo-yeon", "Min-seo")) ?></h1>
       </div>
       <div id="ambient">
         <p>"Tester c'est douter"</p>
       </div>
       <div id="apparence">
-        <h2>APPARENCE</h2></div>
+        <h2 style="border-bottom: none;">
+      APPARENCE</h2>
+      </div>
       <div id="description">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
       </div>
-      <script>
-        function setPhase(phase) {
-          document.getElementById('button-container').value = phase;
-    $('#dialog-redirect').val('_drink');
-          $('#hunt_form').submit();
-        }
  <script>
     function setPhase() {
 $('#dialog-redirect').val('_drink');
@@ -39,7 +34,7 @@ $('#dialog-redirect').val('_drink');
     }
   </script>
   <input type="hidden" id="dialog-redirect" name="goto" />
-  <button style="border: none;
+  <button class="header-button control close"   style="border: none;
         outline: none;
         background-color: transparent;
         box-shadow:none;" 
